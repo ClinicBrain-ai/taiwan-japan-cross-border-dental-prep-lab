@@ -31,6 +31,10 @@ This packet organizes cross-border dental care planning information only. It is 
 - `/examples`
 - `/about`
 
+## First domain module
+
+The first domain module is [Taiwan-Japan Cross-Border Dental Prep](domains/taiwan-japan-cross-border-dental-prep/README.md). It documents the Taiwan-Japan cross-border dental care planning preparation scope for bilingual expert-review packet preparation.
+
 ## Local commands
 
 ```bash
