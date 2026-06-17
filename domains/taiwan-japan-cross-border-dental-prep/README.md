@@ -27,6 +27,32 @@ The module does not resolve those factors. It helps organize them into questions
 - [Language Policy](language-policy.md)
 - [Privacy Notes](privacy-notes.md)
 
+## Markdown templates
+
+- [Taiwanese in Japan considering Taiwan care](md-templates/taiwanese-in-japan-considering-taiwan-care.md)
+- [Japanese in Taiwan considering Japan care](md-templates/japanese-in-taiwan-considering-japan-care.md)
+
+## Packet templates
+
+- [Cross-border dental care planning packet](packet-templates/cross-border-dental-care-planning-packet.md)
+- [Japan-to-Taiwan dental care planning packet](packet-templates/japan-to-taiwan-dental-care-planning-packet.md)
+- [Taiwan-to-Japan dental care planning packet](packet-templates/taiwan-to-japan-dental-care-planning-packet.md)
+
+## Comparison tables
+
+- [Consideration Matrix](comparison-tables/consideration-matrix.md)
+
+## Record request letters
+
+- [Japanese clinic record request letter](record-request-letters/japanese-clinic-request.md)
+- [Taiwan clinic record request letter](record-request-letters/taiwan-clinic-request.md)
+
+## Synthetic cases
+
+- [Case 001: Taiwanese in Japan considering Taiwan implant quote](synthetic-cases/case-001-taiwanese-in-japan-considering-taiwan-implant-quote.json)
+- [Case 002: Japanese in Taiwan considering Japan root canal and crown planning](synthetic-cases/case-002-japanese-in-taiwan-considering-japan-root-canal-crown.json)
+- [Case 003: Taiwanese in Japan emergency red flag](synthetic-cases/case-003-taiwanese-in-japan-emergency-red-flag.json)
+
 ## Urgent warning notice
 
 Urgent warning signs include worsening facial or gum swelling, fever with dental pain or swelling, difficulty swallowing, difficulty breathing, severe uncontrolled pain, pus or spreading infection, trauma, and persistent or uncontrolled bleeding.
@@ -39,6 +65,6 @@ Records can matter for continuity of care: X-rays, panoramic X-rays, local denta
 
 Image-related records are treated as records or attachments only. This module must not describe image interpretation.
 
-## Gate 2 scope
+## Gate history
 
-Gate 2 adds documentation only. It does not add UI features, forms, file uploads, API routes, network behavior, real patient data, or synthetic cases.
+Gate 2 added domain documentation only. Gate 3 adds Markdown templates, packet templates, a Consideration Matrix, record request letters, and synthetic cases. It does not add runtime code, UI features, forms, file uploads, API routes, network behavior, or real patient data.

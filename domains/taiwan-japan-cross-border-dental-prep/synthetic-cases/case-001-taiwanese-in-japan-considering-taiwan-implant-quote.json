@@ -1,0 +1,115 @@
+{
+  "case_id": "SYN-TJ-DENTAL-001",
+  "synthetic": true,
+  "synthetic_notice": "Synthetic training case. Contains no real names, clinic names, addresses, phone numbers, emails, patient IDs, passport numbers, My Number, resident card numbers, insurance numbers, precise birthdays, or identifying dates.",
+  "scenario": "A Taiwanese adult in Japan received a Japanese dental explanation and implant-related quote. The user does not fully understand the quote and wants to organize information for possible Taiwan dentist review.",
+  "user_context": {
+    "current_country": "Japan",
+    "home_country_review_context": "Taiwan",
+    "language_context": "Japanese explanation received; Traditional Chinese organization requested",
+    "identity_notes": "Non-identifying adult profile only"
+  },
+  "urgent_warning_sign_check": {
+    "red_flags_present": false,
+    "reported_checks": {
+      "worsening_facial_or_gum_swelling": false,
+      "fever_with_dental_pain_or_swelling": false,
+      "difficulty_swallowing": false,
+      "difficulty_breathing": false,
+      "severe_uncontrolled_pain": false,
+      "pus_or_spreading_infection": false,
+      "trauma": false,
+      "persistent_or_uncontrolled_bleeding": false
+    }
+  },
+  "main_concern": "The user wants to organize the Japanese explanation and quote into a bilingual expert-review packet for possible Taiwan dentist review.",
+  "symptom_timeline": [
+    "Broad timing only: dental consultation occurred recently.",
+    "No precise dates are included."
+  ],
+  "local_dentist_statement": {
+    "original_wording_fragments": [
+      "奥歯の欠損部についてインプラント治療の説明を受けた",
+      "骨の状態を確認するために追加資料が必要かもしれない",
+      "見積もりには手術費、上部構造、仮歯、検査費用が含まれる可能性がある"
+    ],
+    "translation_plain_language_organization": [
+      "日本診所說明的是缺牙區域的植牙相關選項與估價項目。",
+      "需要整理哪些費用項目已包含、哪些仍不確定。",
+      "影像與檢查資料只作為紀錄或附件，不在本專案中解讀。"
+    ],
+    "user_interpretation": [
+      "使用者不確定報價是否包含所有階段。",
+      "使用者不確定如果之後在台灣諮詢，需要準備哪些資料。"
+    ],
+    "what_remains_unclear": [
+      "報價項目是否包含術前檢查、臨時牙、正式假牙與回診。",
+      "是否已有足夠紀錄供另一位牙醫做專業評估。",
+      "治療階段與回診安排需要由牙醫說明。"
+    ]
+  },
+  "quote_or_treatment_plan_organization": {
+    "line_items_to_clarify": [
+      "Consultation or examination fee",
+      "Surgical fee",
+      "Implant body or material item",
+      "Temporary tooth if applicable",
+      "Final prosthetic component",
+      "Follow-up visits",
+      "Imaging or record-copy costs"
+    ],
+    "non_decision_note": "This case does not validate the quote and does not assert clinical necessity for implant-related care."
+  },
+  "available_records": [
+    "Written quote summary",
+    "General consultation summary",
+    "Panoramic X-ray noted as available record only"
+  ],
+  "missing_records": [
+    "Local dental radiographs for the relevant area if available",
+    "CBCT / DICOM if already available",
+    "Periodontal records if already available",
+    "Detailed treatment staging notes"
+  ],
+  "why_missing_records_may_matter": [
+    "Records may help a Taiwan dentist understand what was already discussed.",
+    "Records may reduce repeated explanation and support continuity-of-care review.",
+    "Image-related records are attachments only and are not interpreted by this project."
+  ],
+  "language_and_communication_concerns": [
+    "Japanese dental terms may need original wording preserved.",
+    "Traditional Chinese organization should separate dentist wording from user interpretation."
+  ],
+  "timeline_and_travel_constraints": [
+    "The user has broad travel-planning constraints but no precise dates are included.",
+    "The packet does not decide timing, travel, or care location."
+  ],
+  "consideration_matrix": [
+    {
+      "area": "Cost",
+      "questions_if_staying_in_current_country": "Which quoted items need clarification from the Japan clinic?",
+      "questions_if_seeking_care_in_home_country": "What estimate questions should be prepared for Taiwan dentist review?"
+    },
+    {
+      "area": "Records",
+      "questions_if_staying_in_current_country": "Which records can be requested from the Japan clinic?",
+      "questions_if_seeking_care_in_home_country": "Which records should be organized for Taiwan review?"
+    },
+    {
+      "area": "Follow-up care",
+      "questions_if_staying_in_current_country": "What follow-up schedule did the Japan dentist describe?",
+      "questions_if_seeking_care_in_home_country": "What continuity questions should be prepared for Taiwan review?"
+    }
+  ],
+  "questions_for_local_dentist": [
+    "Which quote items are included and which are separate?",
+    "What records can be provided for future professional review?",
+    "What follow-up stages were discussed?"
+  ],
+  "questions_for_home_country_dentist": [
+    "What records would be useful to review before discussing possible care?",
+    "What questions should be clarified from the Japan clinic before review?",
+    "What continuity issues should be discussed professionally?"
+  ],
+  "ai_boundary_statement": "This packet organizes cross-border dental care planning information only. It is not diagnosis, treatment recommendation, image interpretation, medication advice, emergency care, waiting-safety judgment, travel-safety judgment, teledentistry, or formal second opinion. Final diagnosis, treatment decisions, and whether it is safe to wait or travel require dentist or medical professional evaluation."
+}

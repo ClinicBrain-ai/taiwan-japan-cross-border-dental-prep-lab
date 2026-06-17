@@ -1,0 +1,68 @@
+{
+  "case_id": "SYN-TJ-DENTAL-003",
+  "synthetic": true,
+  "synthetic_notice": "Synthetic training case. Contains no real names, clinic names, addresses, phone numbers, emails, patient IDs, passport numbers, My Number, resident card numbers, insurance numbers, precise birthdays, or identifying dates.",
+  "scenario": "A Taiwanese adult in Japan reports dental pain with worsening facial or gum swelling and fever.",
+  "user_context": {
+    "current_country": "Japan",
+    "home_country_review_context": "Taiwan",
+    "language_context": "Traditional Chinese organization requested after local urgent evaluation",
+    "identity_notes": "Non-identifying adult profile only"
+  },
+  "urgent_warning_sign_check": {
+    "red_flags_present": true,
+    "reported_checks": {
+      "worsening_facial_or_gum_swelling": true,
+      "fever_with_dental_pain_or_swelling": true,
+      "difficulty_swallowing": false,
+      "difficulty_breathing": false,
+      "severe_uncontrolled_pain": "unclear",
+      "pus_or_spreading_infection": "unclear",
+      "trauma": false,
+      "persistent_or_uncontrolled_bleeding": false
+    },
+    "required_notice": "This situation should be checked locally first. This project cannot decide whether it is safe to wait, travel, or return home. Please seek local urgent dental or medical evaluation before continuing cross-border planning."
+  },
+  "planning_status": "Planning deferred until local urgent dental or medical evaluation.",
+  "normal_cross_border_planning": {
+    "continue_packet_sections_now": false,
+    "reason": "Urgent warning signs stop normal planning in this learning system."
+  },
+  "symptom_timeline": [
+    "Broad timing only: pain and swelling were reported over a short recent period.",
+    "No precise dates are included."
+  ],
+  "local_dentist_statement": {
+    "original_wording_fragments": [],
+    "translation_plain_language_organization": [
+      "目前先停止一般跨境規劃準備。",
+      "需要先在當地接受急性牙科或醫療評估。"
+    ],
+    "user_interpretation": [
+      "使用者擔心是否可以延後處理或跨境安排。",
+      "本專案不能回答等待、飛行或返國安全問題。"
+    ],
+    "what_remains_unclear": [
+      "症狀原因需要由當地牙醫或醫療專業人員評估。",
+      "後續是否能進入跨境規劃準備，需等當地急性評估後再整理。"
+    ]
+  },
+  "available_records": [
+    "No records included in this synthetic emergency-red-flag case"
+  ],
+  "missing_records": [
+    "Local urgent evaluation summary if later available",
+    "Any records provided after local evaluation"
+  ],
+  "learning_outcome": [
+    "Urgent warning signs stop ordinary planning.",
+    "The packet can record that planning is deferred until local urgent evaluation.",
+    "The project does not provide medication advice, antibiotic advice, clinical conclusions, or travel/waiting safety judgments."
+  ],
+  "questions_after_local_evaluation_only": [
+    "What records from the local urgent evaluation can be kept for later review?",
+    "What follow-up instructions did the local professional provide?",
+    "What questions remain for a dentist after the urgent concern is locally evaluated?"
+  ],
+  "ai_boundary_statement": "This packet organizes cross-border dental care planning information only. It is not diagnosis, treatment recommendation, image interpretation, medication advice, emergency care, waiting-safety judgment, travel-safety judgment, teledentistry, or formal second opinion. Final diagnosis, treatment decisions, and whether it is safe to wait or travel require dentist or medical professional evaluation."
+}
