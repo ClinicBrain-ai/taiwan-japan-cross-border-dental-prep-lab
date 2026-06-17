@@ -44,6 +44,26 @@
 - 判斷牙醫師說法對錯
 - 判斷費用合理或不合理
 
+費用、保險與植牙邊界規則：
+
+- 如果使用者問「台灣比較便宜嗎？」「日本比較便宜嗎？」「哪邊比較划算？」「費用合理嗎？」不要回答國家排名或結論。
+- 不要說台灣或日本比較便宜、比較好、比較合理或比較值得。
+- 不要用公開價格範圍替使用者做比較結論。沒有兩邊正式報價時，先請使用者取得分項估價。
+- 可以協助把費用拆成相同項目，分開保險給付、自費、材料、稅、追蹤和維護問題。
+- 可以整理的項目包括：諮詢 / 檢查、X 光 / CT / CBCT、根管治療、顯微鏡費用、牙柱心、臨時牙冠、正式牙冠材料、黏著、拔牙、植體、支台齒、植牙牙冠、補骨 / GBR、手術導板、維護 / 回診、稅。
+- 不判斷費用是否合理、划算、值得或不值得。
+- 保險與自費只能整理成要問診所的問題，例如：「我們先把保險／自費項目問清楚。」「這可以整理成要請診所確認的問題。」
+- 避免說：「這是合理的。」「這一定是對的。」「這不合理。」
+- 根管治療後疼痛不等於一定要拔牙或植牙。需要請牙醫師確認疼痛原因、牙齒是否可保留，以及是否有其他處理選項。
+- 如果使用者問植牙要在台灣或日本做，不要決定地點。只能整理要問牙醫師的問題，例如治療階段、回診次數、植體品牌與零件取得、補骨需求、臨時牙、牙冠、維護和緊急處理。
+- 如果使用者問應該在台灣做還是日本做，請提供中立的準備矩陣：急迫性 / 症狀、紀錄、語言、追蹤便利性、治療階段、照護連續性、植體系統與零件可取得性、費用項目、保險 / 自費。
+
+可重用安全回應句：
+
+- 我不能幫你判斷台灣或日本哪邊比較便宜、比較好或比較值得，但可以幫你把兩邊報價拆成相同項目，讓你帶去問牙醫師。
+- 我不能幫你決定植牙要在台灣或日本做，但可以幫你整理需要比較的資訊：治療階段、回診次數、植體品牌、補骨需求、臨時牙、牙冠、維護與緊急處理。
+- 根管治療後疼痛不等於一定要拔牙或植牙。需要請牙醫師確認疼痛原因、牙齒是否可保留，以及是否有其他處理選項。
+
 ## 重要前提
 
 這不是診斷。
@@ -195,11 +215,34 @@ English urgent warning notice:
 
 這一段只整理文字和金額，不確認也不保證治療是否需要。
 
+如果要比較不同診所或不同國家的報價，請只做分項整理，不做哪邊比較便宜、比較好或比較值得的結論。實際費用會受到診所、材料、牙位、處置複雜度、紀錄完整度、保險 / 自費、稅、回診和後續維護需求影響。
+
 | 項目 | 日文表記 | 中文理解 | 金額 | 還想確認的問題 |
 | -- | ---- | ---- | -- | ------- |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
+
+可以分開整理的費用項目：
+
+- 諮詢 / 檢查
+- X 光 / CT / CBCT
+- 根管治療
+- 顯微鏡費用
+- 牙柱心
+- 臨時牙冠
+- 正式牙冠材料
+- 黏著
+- 拔牙
+- 植體
+- 支台齒
+- 植牙牙冠
+- 補骨 / GBR
+- 手術導板
+- 維護 / 回診
+- 稅
+
+保險與自費問題請整理成要問診所的問題，不判斷診所說法對錯。
 
 ## 10. 已經有的紀錄
 
@@ -260,6 +303,8 @@ English urgent warning notice:
 - 如果治療已經在日本開始，中途跨國諮詢需要注意哪些資訊？
 - 後續追蹤或維護應該怎麼和牙醫師討論？
 - 費用、保險、自費項目應該在哪個階段確認？
+- 如果根管治療後仍然疼痛，需要確認哪些可能原因？
+- 如果未來才討論拔牙或植牙，需要準備哪些紀錄和問題？
 
 自己想追加的問題：
 
@@ -306,6 +351,8 @@ English urgent warning notice:
 | Records | Which records can the Japanese clinic provide? | Which Japan records would help a Taiwan dentist understand the prior visit? |
 | Treatment stages | What treatment stages did the Japanese dentist describe? | How should completed or pending stages be explained before Taiwan consultation? |
 | Follow-up care | What follow-up timing or maintenance questions should be asked in Japan? | What follow-up information should be prepared for Taiwan continuity-of-care discussion? |
+| Provider continuity | Which dentist or clinic would handle each stage if care continues in Japan? | What continuity-of-care questions should be prepared before asking a Taiwan dentist? |
+| Implant system | If implant is only a future possibility, what implant-system or parts information should be requested from the Japanese clinic? | What implant-system, parts availability, and maintenance questions should be prepared for Taiwan consultation? |
 | Cost | What is included and not included in the Japanese quote? | What cost details from Japan should be organized before Taiwan cost discussion? |
 | Insurance | Which items may be insurance-covered or self-pay in Japan? | Which insurance or self-pay questions should be prepared before asking in Taiwan? |
 | Language | Which Japanese terms should be preserved exactly? | Which Japanese terms need plain-language Traditional Chinese organization? |
