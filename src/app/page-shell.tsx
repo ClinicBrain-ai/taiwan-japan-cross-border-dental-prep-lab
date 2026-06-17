@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { BOUNDARY_STATEMENT, navItems, operatingRules } from "./content";
 
 type Section = {
@@ -11,6 +12,7 @@ type PageShellProps = {
   intro: string;
   currentPath: string;
   sections: readonly Section[];
+  children?: ReactNode;
 };
 
 export function PageShell({
@@ -18,6 +20,7 @@ export function PageShell({
   intro,
   currentPath,
   sections,
+  children,
 }: PageShellProps) {
   return (
     <main className="site-shell">
@@ -71,6 +74,8 @@ export function PageShell({
           </article>
         ))}
       </section>
+
+      {children}
 
       <section className="content-grid" aria-label="Page sections">
         {sections.map((section) => (

@@ -240,6 +240,359 @@ h1 {
   line-height: 1.65;
 }
 
+.route-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  padding-top: 28px;
+}
+
+.route-panel a,
+.text-link,
+.download-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--foreground);
+  border-radius: 6px;
+  background: var(--foreground);
+  color: var(--panel);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.text-link {
+  justify-self: start;
+  margin-top: 6px;
+}
+
+.section-kicker {
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.synthetic-label {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: #fff8e7;
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1;
+  padding: 6px 9px;
+}
+
+.demo-workspace {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.38fr) minmax(0, 0.62fr);
+  gap: 20px;
+  align-items: start;
+  padding-top: 28px;
+}
+
+.demo-sidebar,
+.demo-main,
+.safety-stack,
+.examples-list {
+  display: grid;
+  gap: 16px;
+}
+
+.case-picker,
+.language-toggle,
+.selected-case-panel,
+.packet-markdown-panel,
+.matrix-panel,
+.boundary-statement,
+.red-flag-notice,
+.prohibited-panel,
+.framework-diagram,
+.designer-table article,
+.example-row,
+.loop-panel {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 20px;
+}
+
+.panel-heading h2,
+.matrix-panel h2,
+.boundary-statement h2,
+.red-flag-notice h2,
+.prohibited-panel h2,
+.framework-diagram h2,
+.loop-panel h2 {
+  margin-top: 6px;
+  color: var(--foreground);
+  font-size: 20px;
+  font-weight: 820;
+  line-height: 1.25;
+}
+
+.case-button-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.case-button {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfa;
+  color: var(--foreground);
+  cursor: pointer;
+  font: inherit;
+  line-height: 1.45;
+  padding: 14px;
+  text-align: left;
+}
+
+.case-button[aria-pressed="true"] {
+  border-color: var(--foreground);
+  background: var(--panel-strong);
+}
+
+.case-button-topline,
+.selected-case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.case-button small,
+.selected-case-panel p,
+.boundary-statement p,
+.red-flag-notice p,
+.loop-panel li,
+.designer-table p,
+.example-row p,
+.example-row dd,
+.language-toggle dd,
+.matrix-panel td {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.selected-case-panel {
+  display: grid;
+  gap: 14px;
+}
+
+.selected-case-meta span:not(.synthetic-label) {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+  padding: 6px 9px;
+}
+
+.red-flag-notice {
+  border: 2px solid #a43b28;
+  background: #fff0e8;
+}
+
+.red-flag-notice h2 {
+  color: #8a301f;
+  font-size: 24px;
+}
+
+.red-flag-notice p {
+  color: #5b3027;
+  font-weight: 650;
+}
+
+.boundary-statement {
+  background: #f9fbf7;
+}
+
+.packet-markdown-panel pre {
+  max-height: 680px;
+  overflow: auto;
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  background: #111713;
+  color: #edf4ef;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.55;
+  padding: 18px;
+  white-space: pre-wrap;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin-top: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--panel-strong);
+  color: var(--foreground);
+  font-weight: 800;
+}
+
+.segmented-control {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.segmented-control button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 11px;
+}
+
+.segmented-control button[aria-pressed="true"] {
+  border-color: var(--foreground);
+  background: var(--foreground);
+  color: var(--panel);
+}
+
+.language-toggle dl,
+.example-row dl {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.language-toggle div,
+.example-row dl div {
+  display: grid;
+  gap: 2px;
+}
+
+.language-toggle dt,
+.example-row dt {
+  color: var(--accent-strong);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.framework-diagram,
+.designer-table,
+.loop-panel,
+.examples-list,
+.safety-stack {
+  margin-top: 28px;
+}
+
+.framework-steps {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(120px, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  overflow-x: auto;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.framework-step {
+  min-width: 150px;
+  background: var(--panel);
+  padding: 16px;
+}
+
+.framework-step span {
+  display: inline-grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--foreground);
+  color: var(--panel);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.framework-step h3 {
+  margin-top: 14px;
+  color: var(--accent-strong);
+  font-size: 16px;
+}
+
+.framework-step p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.designer-table {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.designer-table h2,
+.example-row h2 {
+  color: var(--accent-strong);
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.designer-table p,
+.example-row p {
+  margin-top: 10px;
+}
+
+.prohibited-panel ul,
+.loop-panel ol {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+.prohibited-panel li {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.example-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.35fr);
+  gap: 18px;
+}
+
+.example-row h2 {
+  margin-top: 12px;
+}
+
 @media (max-width: 920px) {
   .site-header {
     align-items: flex-start;
@@ -252,12 +605,20 @@ h1 {
 
   .hero,
   .rules-band,
-  .content-grid {
+  .content-grid,
+  .route-panel,
+  .demo-workspace,
+  .designer-table,
+  .example-row {
     grid-template-columns: 1fr;
   }
 
   .hero-copy {
     min-height: auto;
+  }
+
+  .framework-steps {
+    grid-template-columns: repeat(7, minmax(180px, 1fr));
   }
 }
 

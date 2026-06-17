@@ -1,5 +1,7 @@
+import { REQUIRED_BOUNDARY_STATEMENT } from "@/lib/boundaryChecks";
+
 export const BOUNDARY_STATEMENT =
-  "This packet organizes cross-border dental care planning information only. It is not diagnosis, treatment recommendation, image interpretation, medication advice, emergency care, waiting-safety judgment, travel-safety judgment, teledentistry, or formal second opinion. Final diagnosis, treatment decisions, and whether it is safe to wait or travel require dentist or medical professional evaluation.";
+  REQUIRED_BOUNDARY_STATEMENT;
 
 export const navItems = [
   { href: "/", label: "Home" },
@@ -22,61 +24,61 @@ export const pageContent = {
   home: {
     title: "Taiwan-Japan Cross-Border Dental Prep Lab",
     intro:
-      "A local-first, synthetic-first, AI-native professional learning system prototype for preparing expert-review packets before cross-border dental visits.",
+      "A local-first, synthetic-first, AI-native professional learning system prototype for preparing expert-review packets before Taiwan-Japan dental planning discussions.",
     sections: [
       {
         heading: "What it is",
-        body: "The lab demonstrates how AI-native workflows can help a person structure decision-relevant dental planning information without making clinical decisions. Dental visit planning between Taiwan and Japan is the first domain.",
+        body: "The lab demonstrates how AI-native workflows can structure decision-relevant planning information without making clinical decisions. Taiwan-Japan cross-border dental care planning is the first domain.",
       },
       {
         heading: "Who it helps",
-        body: "It is designed for learners, researchers, and builders studying professional learning systems where a human leads the work, ChatGPT helps shape the approach, and Codex implements a verifiable local artifact.",
+        body: "It helps learners, researchers, and builders study professional learning systems for Taiwanese-in-Japan and Japanese-in-Taiwan planning preparation scenarios.",
       },
       {
         heading: "What it produces",
-        body: "The intended artifact is an expert-review preparation packet: a clean summary of user goals, known facts, questions for a dentist, cross-border logistics, uncertainty, and safety boundaries.",
+        body: "The output is an expert-review preparation packet: goals, known facts, dentist wording, user interpretation, records, questions, logistics, uncertainty, and safety boundaries.",
       },
     ],
   },
   framework: {
     title: "Cross-Border Decision Prep Framework",
     intro:
-      "A non-clinical structure for organizing information before a Taiwan-Japan dental care discussion.",
+      "A non-clinical structure for organizing information before a Taiwan-Japan dental care planning discussion.",
     sections: [
       {
         heading: "Collect",
-        body: "Gather synthetic case context, goals, timing constraints, prior visit notes, language needs, and questions that should be reviewed by a dentist.",
+        body: "Gather synthetic case context, main concern, broad timing constraints, local dentist wording, record availability, language needs, and questions for professional review.",
       },
       {
         heading: "Separate",
-        body: "Keep facts, assumptions, user concerns, logistics, and clinical questions visibly separate so the packet does not imply diagnosis or treatment advice.",
+        body: "Keep original dentist statements, translation, user interpretation, uncertainty, logistics, and professional questions visibly separate.",
       },
       {
-        heading: "Scaffold and bound",
-        body: "Use a consistent packet scaffold, then label what the system cannot answer: diagnosis, treatment choice, image meaning, medication, timing safety, travel safety, and emergency triage.",
+        heading: "Scaffold",
+        body: "Use a repeatable packet format so non-experts can organize planning information without turning organization into advice.",
       },
       {
-        heading: "Artifact, review, learn",
-        body: "Produce a concise preparation artifact for expert review, inspect it against safety boundaries, and improve the learning system without adding clinical decision behavior.",
+        heading: "Bound, artifact, review, learn",
+        body: "Apply safety boundaries, generate a local Markdown artifact, review it against tests, and improve the learning system without adding clinical decision behavior.",
       },
     ],
   },
   demo: {
-    title: "Synthetic Demo Packet Placeholder",
+    title: "Synthetic Demo Packet Preview",
     intro:
-      "Synthetic demo cases will be added in a later gate. This page reserves the packet surface while keeping the prototype static and non-clinical.",
+      "A local browser demo that selects one invented case and previews a Markdown expert-review preparation packet.",
     sections: [
+      {
+        heading: "Synthetic only",
+        body: "The demo uses three invented cases from the repository. It does not accept free-text patient input, files, accounts, uploads, or real patient data.",
+      },
       {
         heading: "Packet boundary",
         body: BOUNDARY_STATEMENT,
       },
       {
-        heading: "Future synthetic packet sections",
-        body: "A later gate may add invented case goals, timeline, location context, dentist questions, translation notes, and review prompts. It will not accept uploads or real patient data.",
-      },
-      {
-        heading: "No clinical output",
-        body: "The demo will avoid diagnosis, treatment recommendation, image interpretation, medication advice, emergency triage, waiting-safety judgment, travel-safety judgment, teledentistry, and formal second-opinion framing.",
+        heading: "Local output",
+        body: "The generated Markdown packet is created in the browser from local TypeScript data and downloaded locally as a .md file.",
       },
     ],
   },
@@ -86,16 +88,16 @@ export const pageContent = {
       "A design note for the human-led, ChatGPT-assisted, Codex-implemented workflow behind this prototype.",
     sections: [
       {
-        heading: "Human-led",
-        body: "The human defines the professional learning goal, domain boundary, and review standard. The system exists to make reasoning artifacts inspectable, not to replace professional judgment.",
+        heading: "User misconception",
+        body: "The design starts from a common non-expert problem: dental terminology, quotes, records, and cross-border logistics can become mixed together.",
       },
       {
-        heading: "ChatGPT-assisted",
-        body: "ChatGPT helps shape prompts, learning loops, documentation, and review criteria while staying inside a decision-preparation frame.",
+        heading: "Scaffold step",
+        body: "The system separates original wording, plain-language organization, user interpretation, missing records, and questions for dentists.",
       },
       {
-        heading: "Codex-implemented",
-        body: "Codex turns the bounded design into local code, docs, tests, and checks that can be reviewed without sending data to a backend or model service.",
+        heading: "Output artifact",
+        body: "The artifact is a packet for expert review preparation, paired with tests that check boundary statements, red-flag routing, and prohibited wording.",
       },
     ],
   },
@@ -106,7 +108,7 @@ export const pageContent = {
     sections: [
       {
         heading: "Urgent concerns",
-        body: "Urgent warning signs must be routed to local urgent dental or medical evaluation. This prototype does not decide whether a user can wait, travel, fly, or return to Taiwan or Japan.",
+        body: "Urgent warning signs route first to local urgent dental or medical evaluation. Ordinary cross-border planning is deferred until that professional evaluation happens.",
       },
       {
         heading: "Clinical exclusions",
@@ -121,15 +123,15 @@ export const pageContent = {
   examples: {
     title: "Synthetic Examples",
     intro:
-      "Examples will be invented and labeled as synthetic so the repository never contains real patient data.",
+      "Three invented cases show how the packet structure handles language, records, quotes, and urgent warning boundaries.",
     sections: [
       {
         heading: "Synthetic only",
-        body: "Every future example must be fictional, non-identifiable, and written to test the packet structure rather than clinical performance.",
+        body: "Every example is fictional, non-identifiable, and written to test the packet structure rather than clinical performance.",
       },
       {
         heading: "What examples can show",
-        body: "Examples may show how to organize goals, known facts, unknowns, language questions, travel logistics, and dentist-review questions.",
+        body: "Examples can show how to organize goals, known facts, unknowns, language questions, broad logistics, records, and dentist-review questions.",
       },
       {
         heading: "What examples cannot show",
@@ -147,12 +149,12 @@ export const pageContent = {
         body: "The project demonstrates disciplined AI-assisted product engineering: strict boundaries, synthetic data, static architecture, explicit review loops, and clear artifact ownership.",
       },
       {
-        heading: "Not a clinical product",
-        body: "The prototype is not a dental advice tool, patient portal, teledentistry workflow, insurance tool, cost estimator, travel-safety checker, or second-opinion service.",
+        heading: "Loop engineering",
+        body: "The workflow is human-led, ChatGPT-assisted, and Codex-implemented: define the boundary, scaffold the artifact, implement locally, test the output, and review the language.",
       },
       {
-        heading: "Gate 0 and Gate 1",
-        body: "This gate establishes the local repository, Next.js TypeScript scaffold, test baseline, static pages, and foundational documentation for later bounded work.",
+        heading: "Reusable pattern",
+        body: "The first domain can become a reusable pattern for expert-review preparation systems where AI organizes information but does not decide.",
       },
     ],
   },
