@@ -49,6 +49,18 @@ describe("Gate 5 demo UI components", () => {
     );
   });
 
+  it("renders the red-flag notice before the packet preview", () => {
+    render(<DemoClient />);
+
+    fireEvent.click(screen.getByRole("button", { name: /SYN-TJ-DENTAL-003/ }));
+
+    const notice = screen.getByRole("note", { name: "Urgent warning notice" });
+    const preview = screen.getByTestId("packet-preview");
+    const position = notice.compareDocumentPosition(preview);
+
+    expect(position & 4).toBe(4);
+  });
+
   it("uses local Blob and object URL behavior for Markdown download", () => {
     const createObjectUrl = vi.fn(() => "blob:local-markdown");
     const revokeObjectUrl = vi.fn();
@@ -79,10 +91,12 @@ describe("Gate 5 demo UI components", () => {
     expect(revokeObjectUrl).toHaveBeenCalledWith("blob:local-markdown");
   });
 
-  it("does not render patient text fields or file controls", () => {
+  it("does not render patient text fields, editable areas, or file controls", () => {
     const { container } = render(<DemoClient />);
 
     expect(container.querySelector("input")).toBeNull();
+    expect(container.querySelector("textarea")).toBeNull();
+    expect(container.querySelector("[contenteditable='true']")).toBeNull();
   });
 
   it("does not use unsafe HTML injection in components", () => {

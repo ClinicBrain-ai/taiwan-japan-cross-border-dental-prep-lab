@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   assertNoProhibitedAdvice,
+  findProhibitedAdvice,
   REQUIRED_BOUNDARY_STATEMENT,
   URGENT_WARNING_NOTICE,
 } from "../lib/boundaryChecks";
@@ -36,6 +37,22 @@ const requiredSectionHeadings = [
 ] as const;
 
 describe("generateCrossBorderPacket", () => {
+  it("includes required packet safety sections for every synthetic case", () => {
+    for (const caseData of syntheticCases) {
+      const markdown = generateCrossBorderPacket(caseData);
+
+      for (const heading of requiredSectionHeadings) {
+        expect(markdown).toContain(heading);
+      }
+
+      expect(markdown).toContain(REQUIRED_BOUNDARY_STATEMENT);
+      expect(markdown).toContain(caseData.case_id);
+      expect(markdown).toContain("| Urgent warning sign | Reported in synthetic case |");
+      expect(markdown).toContain("## Consideration Matrix");
+      expect(markdown).not.toContain("Recommendation Matrix");
+    }
+  });
+
   it("includes the full packet output contract and required boundary", () => {
     const markdown = generateCrossBorderPacket(syntheticCases[0]);
 
@@ -69,11 +86,41 @@ describe("generateCrossBorderPacket", () => {
     }
   });
 
+  it("keeps urgent red flag packets deferred instead of continuing normal planning", () => {
+    const urgentPacket = generateCrossBorderPacket(syntheticCases[2]);
+
+    expect(urgentPacket).toContain(URGENT_WARNING_NOTICE);
+    expect(urgentPacket).toContain(
+      "Planning deferred until local urgent dental or medical evaluation.",
+    );
+    expect(urgentPacket).toContain("Planning deferred until local urgent evaluation.");
+    expect(urgentPacket).not.toContain(
+      "What timeline constraints should be documented as planning context?",
+    );
+    expect(urgentPacket).not.toContain(
+      "What coverage, reimbursement, or self-pay questions should be prepared?",
+    );
+  });
+
   it("does not contain prohibited recommendation phrases", () => {
     for (const caseData of syntheticCases) {
       expect(() =>
         assertNoProhibitedAdvice(generateCrossBorderPacket(caseData)),
       ).not.toThrow();
+    }
+  });
+
+  it("does not include return, travel, waiting, or flying safety conclusions", () => {
+    for (const caseData of syntheticCases) {
+      const markdown = generateCrossBorderPacket(caseData);
+      const adviceBody = markdown
+        .replaceAll(REQUIRED_BOUNDARY_STATEMENT, "")
+        .replaceAll(URGENT_WARNING_NOTICE, "");
+
+      expect(findProhibitedAdvice(markdown)).toEqual([]);
+      expect(adviceBody).not.toMatch(/\byou should return to (Taiwan|Japan)\b/i);
+      expect(adviceBody).not.toMatch(/\bit is safe to (wait|fly)\b/i);
+      expect(adviceBody).not.toMatch(/\bit is okay to delay\b/i);
     }
   });
 
