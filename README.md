@@ -140,6 +140,10 @@ This is portfolio infrastructure for AI-native professional learning system desi
 - [LinkedIn featured blurb](docs/LINKEDIN_FEATURED_BLURB.md)
 - [Domain module](domains/taiwan-japan-cross-border-dental-prep/README.md)
 
+## Share-Ready Files
+
+- [Japanese-in-Taiwan dental prep share-ready sheet](share_ready/JAPANESE_IN_TAIWAN_DENTAL_PREP_SHARE_READY.md)
+
 ## Demo Routes
 
 - Home: `/`
