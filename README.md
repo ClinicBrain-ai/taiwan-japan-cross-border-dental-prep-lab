@@ -139,6 +139,7 @@ This is portfolio infrastructure for AI-native professional learning system desi
 - [Release notes v0.1.1](docs/RELEASE_NOTES_V0_1_1.md)
 - [Release notes v0.1.2](docs/RELEASE_NOTES_V0_1_2.md)
 - [Release notes v0.1.3](docs/RELEASE_NOTES_V0_1_3.md)
+- [Release notes v0.2.0](docs/RELEASE_NOTES_V0_2_0.md)
 - [X launch thread draft](docs/X_LAUNCH_THREAD_DRAFT.md)
 - [LinkedIn featured blurb](docs/LINKEDIN_FEATURED_BLURB.md)
 - [Domain module](domains/taiwan-japan-cross-border-dental-prep/README.md)
