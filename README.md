@@ -140,6 +140,7 @@ This is portfolio infrastructure for AI-native professional learning system desi
 - [Release notes v0.1.2](docs/RELEASE_NOTES_V0_1_2.md)
 - [Release notes v0.1.3](docs/RELEASE_NOTES_V0_1_3.md)
 - [Release notes v0.2.0](docs/RELEASE_NOTES_V0_2_0.md)
+- [Four-runtime BYO-AI dental handoff manual test gate](docs/manual_tests/FOUR_RUNTIME_BYO_AI_DENTAL_HANDOFF_MANUAL_TEST_GATE.md)
 - [X launch thread draft](docs/X_LAUNCH_THREAD_DRAFT.md)
 - [LinkedIn featured blurb](docs/LINKEDIN_FEATURED_BLURB.md)
 - [Domain module](domains/taiwan-japan-cross-border-dental-prep/README.md)
@@ -148,6 +149,8 @@ This is portfolio infrastructure for AI-native professional learning system desi
 
 - [Japanese-in-Taiwan dental prep share-ready sheet](share_ready/JAPANESE_IN_TAIWAN_DENTAL_PREP_SHARE_READY.md)
 - [Taiwanese-in-Japan dental prep share-ready sheet](share_ready/TAIWANESE_IN_JAPAN_DENTAL_PREP_SHARE_READY.md)
+- [Overseas Taiwanese dental packet builder share-ready sheet](share_ready/OVERSEAS_TAIWANESE_DENTAL_PACKET_BUILDER_SHARE_READY.md)
+- [US dental visit prep share-ready sheet](share_ready/US_DENTAL_VISIT_PREP_SHARE_READY.md)
 
 ## Demo Routes
 
