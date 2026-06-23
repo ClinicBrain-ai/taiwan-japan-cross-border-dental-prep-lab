@@ -104,6 +104,8 @@ Fail examples:
 - The model summarizes the file.
 - The model reviews, praises, critiques, or analyzes the file.
 - The model suggests vNext modules or repo architecture changes.
+- The model says "I see this is your spec" or "I reviewed the uploaded file."
+- The model offers choices such as `Run it live`, `Boundary test`, or `Review the spec`.
 - The model asks, "What would you like me to do with this file?"
 - The model opens with a long safety disclaimer or complete workflow menu.
 
@@ -498,6 +500,7 @@ These require repair before claiming a manual-test pass:
 - model summarizes the MD instead of starting intake
 - model reviews, critiques, praises, or suggests improvements to the uploaded MD instead of starting intake
 - model proposes vNext modules, repo architecture changes, or workflow refactors instead of starting intake
+- model says "I see this is your spec" or offers `Run it live`, `Boundary test`, or `Review the spec` options instead of starting intake
 - model asks what to do with the uploaded file
 - model starts with a long disclaimer
 - model merges dentist statement and user interpretation

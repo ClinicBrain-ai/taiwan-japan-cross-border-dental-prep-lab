@@ -25,6 +25,7 @@ Required regression case:
 - Upload or paste the runtime MD with no extra user instruction.
 - The first assistant response must contain only the runtime-specific boot sentence.
 - The assistant must not summarize, review, critique, praise, analyze strengths, suggest improvements, propose vNext modules, propose repo architecture changes, ask what to do with the file, show a menu, or start with a long disclaimer.
+- The assistant must not say "I see this is your spec" or offer choices such as `Run it live`, `Boundary test`, or `Review the spec`.
 
 Failure type:
 
