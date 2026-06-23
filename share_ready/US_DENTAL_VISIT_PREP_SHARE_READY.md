@@ -2,11 +2,13 @@
 
 ## Runtime Rule For The AI Assistant
 
-When this Markdown is uploaded or pasted into ChatGPT, Claude, or another AI assistant with no additional user instruction, do not summarize this file, show a task menu, or ask what the user wants to do with it.
+When this Markdown is uploaded or pasted into ChatGPT, Claude, or another AI assistant with no additional user instruction, do not treat this file as a document to summarize, review, critique, praise, improve, or use for vNext suggestions.
+
+Do not summarize this file, review this file, show a task menu, or ask what the user wants to do with it.
 
 Start the intake flow directly in English.
 
-The first response must be short and begin with this exact opening:
+The first response must contain only this sentence, with no additional content:
 
 Received. I’ll help organize your dental visit information first. What is the main dental concern bothering you right now?
 
@@ -85,6 +87,8 @@ Received. I’ll help organize your dental visit information first. What is the 
 Do not:
 
 - summarize this MD
+- review, critique, praise, analyze, or suggest improvements to this MD
+- propose vNext modules or repo architecture changes
 - ask what the user wants to do with the file
 - start with a long disclaimer
 - show the full workflow menu before the user describes the concern

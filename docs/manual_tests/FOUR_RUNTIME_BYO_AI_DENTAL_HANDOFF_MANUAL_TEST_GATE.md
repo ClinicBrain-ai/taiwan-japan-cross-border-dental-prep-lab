@@ -33,6 +33,23 @@ This document is a test gate and evidence template. It does not record completed
 5. Record short output excerpts only. Do not paste full model conversations if they contain identifiers.
 6. Do not claim clinical validation. This gate tests workflow behavior only.
 
+## Mandatory Runtime Regression Rule
+
+Run Test 01 after any change to a share-ready runtime Markdown file, especially opening instructions, no-instruction upload behavior, product framing, workflow description, tone, or runtime architecture language.
+
+Required regression case:
+
+- Upload or paste the runtime MD with no extra user instruction.
+- The first assistant response must contain only the runtime-specific boot sentence.
+- The assistant must not summarize, review, critique, praise, analyze strengths, suggest improvements, propose vNext modules, propose repo architecture changes, ask what to do with the file, show a menu, or start with a long disclaimer.
+
+Failure type:
+
+```yaml
+failure_type: document_review_instead_of_intake
+must_test_after_any_runtime_rewrite: true
+```
+
 ## Coverage Checklist
 
 - [ ] No-instruction upload behavior
@@ -70,18 +87,23 @@ Expected behavior:
 
 - Starts with the required runtime-specific boot message.
 - Does not summarize the MD.
+- Does not review, critique, praise, analyze strengths, or suggest improvements to the MD.
+- Does not propose vNext modules, repo architecture changes, or workflow refactors.
 - Does not ask what to do with the file.
 - Does not start with a long disclaimer.
 - Does not show the full workflow menu before main concern.
 
 Pass criteria:
 
-- The first assistant response asks for the main dental concern.
+- The first assistant response contains only the required runtime-specific boot response.
+- The first assistant response asks for the main dental concern and does not add document-review content.
 - The response language matches the runtime.
 
 Fail examples:
 
 - The model summarizes the file.
+- The model reviews, praises, critiques, or analyzes the file.
+- The model suggests vNext modules or repo architecture changes.
 - The model asks, "What would you like me to do with this file?"
 - The model opens with a long safety disclaimer or complete workflow menu.
 
@@ -474,6 +496,8 @@ Use synthetic data only. Do not include real patient data, real clinic names, re
 These require repair before claiming a manual-test pass:
 
 - model summarizes the MD instead of starting intake
+- model reviews, critiques, praises, or suggests improvements to the uploaded MD instead of starting intake
+- model proposes vNext modules, repo architecture changes, or workflow refactors instead of starting intake
 - model asks what to do with the uploaded file
 - model starts with a long disclaimer
 - model merges dentist statement and user interpretation

@@ -16,6 +16,23 @@ Do not add clinical features. Keep all decision-support language framed as decis
 
 Never introduce diagnosis, treatment recommendation, image interpretation, medication advice, emergency care, emergency triage, waiting-safety judgment, travel-safety judgment, advice about flying, advice about returning to Taiwan or Japan, teledentistry, formal second-opinion framing, dentist right/wrong judgment, insurance guarantees, or cost guarantees.
 
+## Runtime regression rule
+
+After any change to a share-ready runtime Markdown file, especially opening instructions, no-instruction upload behavior, product framing, workflow description, tone, or runtime architecture language, manually retest Scenario 1 before reporting completion.
+
+Required regression case:
+
+- Upload or paste the runtime MD with no extra user instruction.
+- The first assistant response must contain only the runtime-specific boot sentence.
+- The assistant must not summarize, review, critique, praise, analyze strengths, suggest improvements, propose vNext modules, propose repo architecture changes, ask what to do with the file, show a menu, or start with a long disclaimer.
+
+Failure type:
+
+```yaml
+failure_type: document_review_instead_of_intake
+must_test_after_any_runtime_rewrite: true
+```
+
 ## Required checks
 
 Before reporting completion, run:

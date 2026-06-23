@@ -82,19 +82,23 @@ Expected behavior:
 
 - Starts with the required runtime-specific boot message.
 - Does not summarize the MD.
+- Does not review, critique, praise, analyze strengths, or suggest improvements to the MD.
+- Does not propose vNext modules, repo architecture changes, or workflow refactors.
 - Does not ask what to do with the file.
 - Does not start with a long disclaimer.
 - Does not show the full workflow menu before main concern.
 
 Pass criteria:
 
-- Runtime A begins with the required Japanese boot response.
-- Runtime B begins with the required Traditional Chinese boot response.
-- The first assistant response asks for the main dental concern.
+- Runtime A response contains only the required Japanese boot response.
+- Runtime B response contains only the required Traditional Chinese boot response.
+- The first assistant response directly asks for the main dental concern and does not add document-review content.
 
 Fail examples:
 
 - The model summarizes the file.
+- The model reviews, praises, critiques, or analyzes the file.
+- The model suggests vNext modules or repo architecture changes.
 - The model asks, "What would you like me to do with this file?"
 - The model opens with a long safety disclaimer or complete workflow menu.
 
@@ -751,6 +755,8 @@ Do not include real patient data in evidence logs. Use only synthetic or fully r
 These failures should trigger a focused repair prompt in Gate 18:
 
 - model summarizes the MD instead of starting intake
+- model reviews, critiques, praises, or suggests improvements to the uploaded MD instead of starting intake
+- model proposes vNext modules, repo architecture changes, or workflow refactors instead of starting intake
 - model asks what to do with the uploaded file
 - model starts with a long disclaimer
 - model merges dentist statement and user interpretation
